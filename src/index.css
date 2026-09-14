@@ -148,3 +148,8 @@ button, a, input { -webkit-tap-highlight-color: transparent; }
   .vs-map .leaflet-control-zoom { display: none; }
   .vs-map .leaflet-control-attribution { font-size: 8px; }
 }
+
+/* Studio dashboard refinements */
+@media (max-width: 639px) {
+  body { overflow-x: hidden; }
+}
