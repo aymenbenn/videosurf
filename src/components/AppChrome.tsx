@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { MapPinIcon, BookmarkIcon, ShoppingCartIcon, MoreHorizontalIcon, CameraIcon, WalletCardsIcon, CalendarDaysIcon, UserRoundIcon } from 'lucide-react';
+import { MapPinIcon, BookmarkIcon, ShoppingCartIcon, MoreHorizontalIcon, CameraIcon, WalletCardsIcon } from 'lucide-react';
 
 export function StatusBar() {
   return (
@@ -24,8 +24,7 @@ const surferTabs = [
 const studioTabs = [
   { label: 'Studio', to: '/studio', icon: CameraIcon },
   { label: 'My money', to: '/money', icon: WalletCardsIcon },
-  { label: 'Bookings', to: '/booking', icon: CalendarDaysIcon },
-  { label: 'More', to: '/account', icon: UserRoundIcon },
+  { label: 'More', to: '/account', icon: MoreHorizontalIcon },
 ];
 
 export function TabBar() {
@@ -40,7 +39,7 @@ export function TabBar() {
           const Icon = tab.icon;
           return (
             <li key={tab.label} className="flex-1">
-              <Link to={tab.to} className={`flex min-h-[52px] flex-col items-center justify-center gap-1 text-[9.5px] ${active ? 'text-coral' : 'text-ink/75'}`}>
+              <Link to={tab.to} className={`mx-auto flex min-h-[52px] max-w-[116px] flex-col items-center justify-center gap-1 rounded-full text-[9.5px] ${active ? 'bg-[#e9eef0] text-coral' : 'text-ink/75'}`}>
                 <Icon className="h-[20px] w-[20px]" strokeWidth={active ? 2.1 : 1.7} />
                 <span>{tab.label}</span>
               </Link>

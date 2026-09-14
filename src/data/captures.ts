@@ -10,51 +10,42 @@ export type Capture = {
   featured?: boolean;
 };
 
-const shots = ["/imgi_46_playgrounds.jpeg", "/imgi_43_keramas.jpeg", "/imgi_41_sanur-reef.jpeg", "/imgi_37_green-bowl.jpeg", "/imgi_45_lacerations.jpeg", "/imgi_44_shipwrecks.jpeg"];
-
-
-
-
-
-
-
+const shots = [
+  '/imgi_46_playgrounds.jpeg', '/imgi_43_keramas.jpeg', '/imgi_41_sanur-reef.jpeg',
+  '/imgi_37_green-bowl.jpeg', '/imgi_45_lacerations.jpeg', '/imgi_44_shipwrecks.jpeg'
+];
 
 export const illustrations = {
-  homeBand: "/Gemini_Generated_Image_r1q4vhr1q4vhr1q4.jpg",
-  spotHeader: "/Gemini_Generated_Image_pacbnipacbnipacb.jpg",
-  studioBand: "/Gemini_Generated_Image_x21v4xx21v4xx21v.jpg",
-  spotThumb: "/Gemini_Generated_Image_i1mck0i1mck0i1mc.jpg"
+  homeBand: '/imgi_3_home-scene-e2dcfe3e.png',
+  homePanorama: '/ChatGPT Image 14 sept. 2026, 23_44_14.png',
+  spotHeader: '/ChatGPT Image 14 sept. 2026, 23_40_16.png',
+  studioBand: '/ChatGPT Image 14 sept. 2026, 23_44_14.png',
+  spotThumb: '/ChatGPT Image 14 sept. 2026, 23_40_16.png'
 };
 
 export const spotThumbs: Record<string, string> = {
-  pererenan: shots[0],
-  'batu-bolong': shots[1],
-  'echo-beach': shots[2],
-  berawa: shots[3],
-  seseh: shots[4],
-  balian: shots[5]
+  pererenan: shots[0], 'batu-bolong': shots[1], 'echo-beach': shots[2],
+  berawa: shots[3], seseh: shots[4], balian: shots[5]
 };
 
 export const captures: Capture[] = [
-{ id: 'c1', kind: 'video', time: '06:14', duration: '0:24', price: 9, photographer: 'Léo Mahé', thumb: shots[0], featured: true },
-{ id: 'c2', kind: 'video', time: '06:22', duration: '0:18', price: 9, photographer: 'Léo Mahé', thumb: shots[2] },
-{ id: 'c3', kind: 'photo', time: '06:31', frames: 6, price: 6, photographer: 'Ayu Pratiwi', thumb: shots[1] },
-{ id: 'c4', kind: 'video', time: '06:48', duration: '0:31', price: 12, photographer: 'Ayu Pratiwi', thumb: shots[3] },
-{ id: 'c5', kind: 'photo', time: '07:02', frames: 4, price: 6, photographer: 'Léo Mahé', thumb: shots[4] },
-{ id: 'c6', kind: 'video', time: '07:15', duration: '0:22', price: 9, photographer: 'Marco Silva', thumb: shots[5] },
-{ id: 'c7', kind: 'video', time: '07:29', duration: '0:27', price: 9, photographer: 'Marco Silva', thumb: shots[2] },
-{ id: 'c8', kind: 'photo', time: '07:41', frames: 9, price: 8, photographer: 'Ayu Pratiwi', thumb: shots[0] },
-{ id: 'c9', kind: 'video', time: '07:58', duration: '0:16', price: 9, photographer: 'Léo Mahé', thumb: shots[3] }];
+  { id: 'c1', kind: 'video', time: '06:14', duration: '0:24', price: 9, photographer: 'Léo Mahé', thumb: shots[0], featured: true },
+  { id: 'c2', kind: 'video', time: '06:22', duration: '0:18', price: 9, photographer: 'Léo Mahé', thumb: shots[2] },
+  { id: 'c3', kind: 'photo', time: '06:31', frames: 6, price: 6, photographer: 'Ayu Pratiwi', thumb: shots[1] },
+  { id: 'c4', kind: 'video', time: '06:48', duration: '0:31', price: 12, photographer: 'Ayu Pratiwi', thumb: shots[3] },
+  { id: 'c5', kind: 'photo', time: '07:02', frames: 4, price: 6, photographer: 'Léo Mahé', thumb: shots[4] },
+  { id: 'c6', kind: 'video', time: '07:15', duration: '0:22', price: 9, photographer: 'Marco Silva', thumb: shots[5] },
+  { id: 'c7', kind: 'video', time: '07:29', duration: '0:27', price: 9, photographer: 'Marco Silva', thumb: shots[2] },
+  { id: 'c8', kind: 'photo', time: '07:41', frames: 9, price: 8, photographer: 'Ayu Pratiwi', thumb: shots[0] },
+  { id: 'c9', kind: 'video', time: '07:58', duration: '0:16', price: 9, photographer: 'Léo Mahé', thumb: shots[3] },
+  { id: 'c10', kind: 'video', time: '08:14', duration: '0:24', price: 9, photographer: 'Léo Mahé', thumb: shots[4] },
+  { id: 'c11', kind: 'video', time: '08:15', duration: '0:21', price: 9, photographer: 'Marco Silva', thumb: shots[1] },
+  { id: 'c12', kind: 'video', time: '08:16', duration: '0:19', price: 9, photographer: 'Ayu Pratiwi', thumb: shots[5] }
+];
 
-
-export type Photographer = {
-  name: string;
-  sessions: number;
-  from: number;
-  shootingToday: boolean;
-};
-
+export type Photographer = { name: string; sessions: number; from: number; shootingToday: boolean };
 export const photographers: Photographer[] = [
-{ name: 'Léo Mahé', sessions: 214, from: 9, shootingToday: true },
-{ name: 'Ayu Pratiwi', sessions: 168, from: 6, shootingToday: true },
-{ name: 'Marco Silva', sessions: 92, from: 9, shootingToday: false }];
+  { name: 'Léo Mahé', sessions: 214, from: 9, shootingToday: true },
+  { name: 'Ayu Pratiwi', sessions: 168, from: 6, shootingToday: true },
+  { name: 'Marco Silva', sessions: 92, from: 9, shootingToday: false }
+];
