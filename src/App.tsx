@@ -8,16 +8,12 @@ import { Studio } from './pages/Studio';
 import { Soon } from './pages/Soon';
 
 type Platform = 'web' | 'ios';
-type SpotHeaderStyle = 'illustration' | 'sand';
-
 interface AppProps {
   /** 'web' renders the site header; 'ios' drops it for the native tab bar and draws under the status bar. */
   platform?: Platform;
-  /** Two directions for the spot page header: a per-spot ink drawing, or a worked sand band. */
-  spotHeaderStyle?: SpotHeaderStyle;
 }
 
-export function App({ platform = 'web', spotHeaderStyle = 'illustration' }: AppProps) {
+export function App({ platform = 'web' }: AppProps) {
   const isApp = platform === 'ios';
 
   return (
@@ -37,7 +33,7 @@ export function App({ platform = 'web', spotHeaderStyle = 'illustration' }: AppP
 
         <Routes>
           <Route path="/" element={<Home isApp={isApp} />} />
-          <Route path="/spot/:slug" element={<Spot isApp={isApp} headerVariant={spotHeaderStyle} />} />
+          <Route path="/spot/:slug" element={<Spot isApp={isApp} />} />
           <Route path="/studio" element={<Studio isApp={isApp} />} />
           <Route path="/waves" element={<Soon title="My waves" isApp={isApp} />} />
           <Route path="/money" element={<Soon title="My money" isApp={isApp} />} />

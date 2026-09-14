@@ -1,61 +1,54 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { ChevronDownIcon } from 'lucide-react';
-import { Wordmark } from './Wordmark';
 
 const nav = [
-{ label: 'Studio', to: '/studio' },
-{ label: 'My money', to: '/money' }];
+  { label: 'Explore', to: '/' },
+  { label: 'How it works', to: '/how-it-works' },
+  { label: 'For photographers', to: '/studio' },
+];
 
-
-/** Web-only chrome. The iOS app renders the same pages without this header. */
 export function SiteHeader() {
   const { pathname } = useLocation();
   return (
-    <header className="sticky top-0 z-30 border-b border-line bg-sand/90 backdrop-blur">
-      <div className="mx-auto flex h-[68px] w-full max-w-[1280px] items-center justify-between px-5 md:px-10">
-        <Link
-          to="/"
-          aria-label="video.surf — home"
-          className="rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-ocean/40">
-          
-          <Wordmark size="sm" />
+    <header className="sticky top-0 z-50 border-b border-line/80 bg-sand/92 backdrop-blur-xl">
+      <div className="mx-auto flex h-[72px] max-w-[1280px] items-center justify-between px-5 md:px-8 lg:px-10">
+        <Link to="/" className="flex h-11 items-center rounded-md" aria-label="video.surf home">
+          <img src="/imgi_1_logo-f9e815eb.png" alt="video.surf" className="h-[42px] w-auto object-contain" />
         </Link>
 
-        <nav aria-label="Main" className="flex items-center gap-1">
+        <nav className="hidden items-center gap-1 md:flex" aria-label="Main navigation">
           {nav.map((item) => {
-            const active = pathname.startsWith(item.to);
+            const active = item.to === '/' ? pathname === '/' : pathname.startsWith(item.to);
             return (
               <Link
-                key={item.to}
+                key={item.label}
                 to={item.to}
-                className={[
-                'flex h-11 items-center rounded-full px-4 text-[14px] transition-colors duration-150 ease-out',
-                active ?
-                'bg-white text-ocean shadow-soft' :
-                'text-muted hover:text-ink'].
-                join(' ')}>
-                
+                className={`flex min-h-11 items-center rounded-full px-4 text-[13px] transition-colors ${
+                  active ? 'bg-white text-ocean shadow-soft' : 'text-muted hover:text-ink'
+                }`}
+              >
                 {item.label}
-              </Link>);
-
+              </Link>
+            );
           })}
-          <button
-            type="button"
-            className="ml-1 flex h-11 items-center gap-1 rounded-full px-3 text-[14px] text-muted transition-colors duration-150 ease-out hover:text-ink">
-            
-            Account
-            <ChevronDownIcon className="h-4 w-4" aria-hidden="true" />
+        </nav>
+
+        <div className="flex items-center gap-1">
+          <Link to="/account" className="hidden min-h-11 items-center rounded-full px-4 text-[13px] text-muted hover:text-ink md:flex">
+            Log in
+          </Link>
+          <Link to="/account" className="flex min-h-11 items-center rounded-full bg-coral px-5 text-[13px] font-medium text-white shadow-soft hover:bg-[#df5c3e]">
+            Sign up
+          </Link>
+          <button className="ml-1 hidden min-h-11 items-center gap-1 rounded-full px-3 text-[13px] text-muted hover:text-ink lg:flex">
+            Account <ChevronDownIcon className="h-3.5 w-3.5" />
           </button>
-          <button
-            type="button"
-            aria-label="Language: English"
-            className="ml-1 flex h-11 w-11 items-center justify-center rounded-full text-[13px] text-muted transition-colors duration-150 ease-out hover:text-ink">
-            
+          <button aria-label="Language: English" className="hidden h-11 w-11 items-center justify-center text-[12px] text-muted sm:flex">
             EN
           </button>
-        </nav>
+        </div>
       </div>
-    </header>);
-
+    </header>
+  );
 }

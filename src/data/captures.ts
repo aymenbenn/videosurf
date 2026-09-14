@@ -10,7 +10,7 @@ export type Capture = {
   featured?: boolean;
 };
 
-const shots = ["/96fbc2db-0585-42be-a447-34852aade202.jpg", "/2c7fbf0a-5503-432b-8e3a-a425463d7e88.jpg", "/ecaaff3f-8054-47ac-9f5e-aadf57e8a6b6.jpg", "/087fddb3-f257-49e7-8d92-9d7721d5ef71.jpg", "/338bb294-325f-4e92-af2f-47a728591267.jpg", "/b55687d2-9f53-4136-aaf0-ab6846bf4c07.jpg"];
+const shots = ["/imgi_46_playgrounds.jpeg", "/imgi_43_keramas.jpeg", "/imgi_41_sanur-reef.jpeg", "/imgi_37_green-bowl.jpeg", "/imgi_45_lacerations.jpeg", "/imgi_44_shipwrecks.jpeg"];
 
 
 
@@ -20,10 +20,10 @@ const shots = ["/96fbc2db-0585-42be-a447-34852aade202.jpg", "/2c7fbf0a-5503-432b
 
 
 export const illustrations = {
-  homeBand: "/520fca80-2912-44c2-aa8e-077b3722f341.jpg",
-  spotHeader: "/9b8d3543-6d86-4a09-9c11-dbbab18272ba.jpg",
-  studioBand: "/ebac486c-e8a1-4906-9544-db0c8556bf8a.jpg",
-  spotThumb: "/d57f542a-496d-4c43-a02c-a3418796857a.jpg"
+  homeBand: "/Gemini_Generated_Image_r1q4vhr1q4vhr1q4.jpg",
+  spotHeader: "/Gemini_Generated_Image_pacbnipacbnipacb.jpg",
+  studioBand: "/Gemini_Generated_Image_x21v4xx21v4xx21v.jpg",
+  spotThumb: "/Gemini_Generated_Image_i1mck0i1mck0i1mc.jpg"
 };
 
 export const spotThumbs: Record<string, string> = {

@@ -1,23 +1,9 @@
 import React from 'react';
 
-type WordmarkProps = {
-  size?: 'sm' | 'md' | 'lg';
-  className?: string;
-};
+type Props = { size?: 'sm' | 'md' | 'lg'; className?: string };
 
-const sizes = {
-  sm: 'h-[30px] w-auto',
-  md: 'h-[42px] w-auto',
-  lg: 'h-[54px] w-auto'
-};
+const sizes = { sm: 'h-[30px]', md: 'h-[40px]', lg: 'h-[52px]' };
 
-/** Uses the supplied video.surf wordmark asset so the contest build stays faithful to the brand. */
-export function Wordmark({ size = 'sm', className = '' }: WordmarkProps) {
-  return (
-    <img
-      src="/video-surf-wordmark.png"
-      alt="video.surf"
-      className={`${sizes[size]} ${className}`}
-    />
-  );
+export function Wordmark({ size = 'sm', className = '' }: Props) {
+  return <img src="/imgi_4_video-surf-inline-c66eb9e3.png" alt="video.surf" className={`${sizes[size]} w-auto object-contain ${className}`} />;
 }

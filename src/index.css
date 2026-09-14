@@ -27,7 +27,7 @@ body {
   background: #eef2ee;
 }
 .vs-map .leaflet-tile-pane {
-  filter: sepia(0.22) saturate(0.7) hue-rotate(-6deg) brightness(1.04) contrast(0.9);
+  filter: sepia(0.18) saturate(0.62) hue-rotate(-5deg) brightness(1.05) contrast(0.92);
 }
 .vs-map .leaflet-container {
   font-family: 'Sora', system-ui, sans-serif;
@@ -138,4 +138,13 @@ body {
 }
 .no-scrollbar::-webkit-scrollbar {
   display: none;
+}
+
+/* video.surf presentation details */
+button, a, input { -webkit-tap-highlight-color: transparent; }
+.leaflet-control-zoom { margin-top: 72px !important; margin-right: 14px !important; }
+.vs-map .leaflet-control-zoom a { font-family: Sora, sans-serif; font-size: 16px; }
+@media (max-width: 639px) {
+  .vs-map .leaflet-control-zoom { display: none; }
+  .vs-map .leaflet-control-attribution { font-size: 8px; }
 }
