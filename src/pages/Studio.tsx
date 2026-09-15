@@ -103,7 +103,7 @@ export function Studio({ isApp }: Props) {
           <aside className="space-y-5">
             <section className="overflow-hidden rounded-[17px] border border-line bg-white shadow-soft">
               <div className="relative h-[150px] overflow-hidden bg-sandDeep">
-                <img src="/ChatGPT Image 14 sept. 2026, 23_40_16.png" alt="Coastal illustration" className="h-full w-full object-cover" />
+                <img src="/banners/ChatGPT Image 15 sept. 2026, 01_19_08.png" alt="Coastal illustration" className="h-full w-full object-cover object-center" />
               </div>
               <div className="p-5">
                 <div className="flex items-start justify-between gap-4"><div><h2 className="font-display text-[23px] text-ocean">Give your surfers this</h2><p className="mt-1.5 text-[11.5px] leading-relaxed text-muted">Share your public page on the beach so surfers can find their waves later.</p></div><ExternalLinkIcon className="mt-1 h-4 w-4 shrink-0 text-ocean" /></div>
@@ -123,9 +123,9 @@ export function Studio({ isApp }: Props) {
         </div>
 
         <section className="relative mt-8 hidden overflow-hidden rounded-[17px] border border-line bg-white md:block">
-          <div className="grid min-h-[145px] grid-cols-[1fr_420px] items-center">
+          <div className="grid min-h-[175px] grid-cols-[1fr_480px] items-center">
             <div className="px-7 py-6"><p className="text-[9px] uppercase tracking-[.17em] text-muted">Made Surf Shots</p><h2 className="mt-1 font-display text-[27px] text-ocean">Shoot. Publish. Get paid.</h2><p className="mt-1 max-w-[560px] text-[11.5px] text-muted">A simple workspace for the people behind the lens.</p></div>
-            <div className="h-full overflow-hidden"><img src="/imgi_3_home-scene-e2dcfe3e.png" alt="" className="h-full w-full object-cover object-right opacity-80 mix-blend-multiply" /></div>
+            <div className="h-full overflow-hidden"><img src="/banners/imgi_19_palm-scene-e3fbb1c9.png" alt="" className="h-full w-full object-cover object-center opacity-90 mix-blend-multiply" /></div>
           </div>
         </section>
       </main>
