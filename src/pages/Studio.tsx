@@ -32,11 +32,11 @@ export function Studio({ isApp }: Props) {
             <button className="flex min-h-11 items-center gap-2 rounded-full bg-coral px-6 text-[12px] font-medium text-white shadow-soft"><PlusIcon className="h-4 w-4" /> New shoot</button>
           </div>
 
-          <div className="absolute bottom-5 right-5 hidden items-end gap-3 md:flex lg:right-10">
-            <div className="overflow-hidden rounded-[13px] border border-white/70 shadow-lift">
-              <img src="/imgi_41_sanur-reef.jpeg" alt="Recent surf capture" className="h-[170px] w-[122px] object-cover" />
+          <div className="absolute bottom-0 right-4 hidden items-end gap-3 md:flex lg:right-10">
+            <div className="relative h-[205px] w-[250px] overflow-hidden rounded-t-[18px] bg-white/10">
+              <img src="/profil and images/imgi_151_cfaq_outcome_Freelance_Photographer.png" alt="Photographer profile" className="absolute bottom-0 left-1/2 h-[225px] w-[225px] -translate-x-1/2 object-contain drop-shadow-[0_12px_20px_rgba(29,41,51,.18)]" />
             </div>
-            <button className="mb-1 flex h-11 w-11 items-center justify-center rounded-full border border-white/80 bg-white/95 text-ocean shadow-soft" aria-label="Edit profile"><PencilIcon className="h-4 w-4" /></button>
+            <button className="mb-4 flex h-11 w-11 items-center justify-center rounded-full border border-white/80 bg-white/95 text-ocean shadow-soft" aria-label="Edit profile"><PencilIcon className="h-4 w-4" /></button>
           </div>
         </div>
       </section>
@@ -102,8 +102,8 @@ export function Studio({ isApp }: Props) {
 
           <aside className="space-y-5">
             <section className="overflow-hidden rounded-[17px] border border-line bg-white shadow-soft">
-              <div className="relative h-[150px] overflow-hidden bg-sandDeep">
-                <img src="/banners/ChatGPT Image 15 sept. 2026, 01_19_08.png" alt="Coastal illustration" className="h-full w-full object-cover object-center" />
+              <div className="relative h-[135px] overflow-hidden bg-sandDeep px-4">
+                <img src="/illustrations/coastal-line-art.svg" alt="" className="h-full w-full object-contain" />
               </div>
               <div className="p-5">
                 <div className="flex items-start justify-between gap-4"><div><h2 className="font-display text-[23px] text-ocean">Give your surfers this</h2><p className="mt-1.5 text-[11.5px] leading-relaxed text-muted">Share your public page on the beach so surfers can find their waves later.</p></div><ExternalLinkIcon className="mt-1 h-4 w-4 shrink-0 text-ocean" /></div>
@@ -123,9 +123,9 @@ export function Studio({ isApp }: Props) {
         </div>
 
         <section className="relative mt-8 hidden overflow-hidden rounded-[17px] border border-line bg-white md:block">
-          <div className="grid min-h-[175px] grid-cols-[1fr_480px] items-center">
+          <div className="grid min-h-[145px] grid-cols-[1fr_420px] items-center">
             <div className="px-7 py-6"><p className="text-[9px] uppercase tracking-[.17em] text-muted">Made Surf Shots</p><h2 className="mt-1 font-display text-[27px] text-ocean">Shoot. Publish. Get paid.</h2><p className="mt-1 max-w-[560px] text-[11.5px] text-muted">A simple workspace for the people behind the lens.</p></div>
-            <div className="h-full overflow-hidden"><img src="/banners/imgi_19_palm-scene-e3fbb1c9.png" alt="" className="h-full w-full object-cover object-center opacity-90 mix-blend-multiply" /></div>
+            <div className="h-full overflow-hidden bg-sand"><img src="/illustrations/coastal-line-art.svg" alt="" className="h-full w-full object-contain object-right opacity-85" /></div>
           </div>
         </section>
       </main>

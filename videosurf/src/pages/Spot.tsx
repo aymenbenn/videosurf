@@ -54,7 +54,7 @@ export function Spot({ isApp }: Props) {
         <aside className="hidden md:block">
           <div className="sticky top-24 space-y-4">
             <section className="rounded-[14px] border border-line bg-white p-5 shadow-soft"><p className="font-display text-[22px] text-ocean">Behind the lens</p><p className="mt-1 text-[13px] font-medium text-ink">Léo Mahé</p><p className="mt-1 text-[11px] text-muted">13 captures</p><div className="mt-4 space-y-2 text-[12px]"><div className="flex justify-between"><span>Photo</span><strong>Rp 75,000</strong></div><div className="flex justify-between"><span>Video</span><strong>Rp 150,000</strong></div><p className="pt-1 text-[10px] text-ocean">−15% from 5 captures</p></div></section>
-            <img src={illustrations.homePanorama} alt="" className="h-[180px] w-full rounded-[14px] bg-sandDeep object-contain" />
+            <img src={illustrations.homePanorama} alt="" className="h-[180px] w-full object-cover rounded-[14px] mix-blend-multiply" />
           </div>
         </aside>
       </div>

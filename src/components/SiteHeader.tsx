@@ -18,9 +18,9 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-[100] border-b border-line bg-sand/95 backdrop-blur-xl">
-      <div className="mx-auto flex h-[74px] max-w-[1280px] items-center px-5 md:px-8 lg:px-10">
-        <Link to="/" className="flex h-[62px] w-[138px] shrink-0 items-center" aria-label="video.surf home">
-          <img src="/imgi_1_logo-f9e815eb.png" alt="video.surf" className="h-[58px] w-auto object-contain" />
+      <div className="mx-auto flex h-[72px] max-w-[1280px] items-center px-5 md:px-8 lg:px-10">
+        <Link to="/" className="flex h-[58px] w-[122px] shrink-0 items-center" aria-label="video.surf home">
+          <img src="/imgi_1_logo-f9e815eb.png" alt="video.surf" className="h-[54px] w-auto object-contain" />
         </Link>
 
         <nav className="ml-auto hidden items-center gap-1 md:flex" aria-label="Main navigation">

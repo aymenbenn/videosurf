@@ -18,7 +18,7 @@ export function Home({ isApp }: Props) {
   return <div className={isApp ? 'pb-24' : 'pb-8'}>
     <main className="mx-auto max-w-[1280px] px-0 md:px-8 lg:px-10">
       <section className="relative min-h-[360px] overflow-hidden border-b border-line bg-sandDeep md:rounded-b-[22px]">
-        <img src={illustrations.homeBand} alt="" aria-hidden className="pointer-events-none absolute bottom-0 right-0 h-[205px] w-[62%] object-contain object-right opacity-90 md:h-[285px] md:w-[58%]" />
+        <img src={illustrations.homeBand} alt="" aria-hidden className="pointer-events-none absolute bottom-0 right-0 h-[310px] w-[68%] object-contain object-right mix-blend-multiply md:h-[390px] md:w-[63%]" />
         <div className="relative z-10 max-w-[700px] px-5 pb-7 pt-9 md:px-8 md:pb-8 md:pt-10">
           <h1 className="font-display text-[40px] leading-[.98] tracking-[-.03em] text-ocean md:text-[58px]">Find your videos<br className="hidden md:block" /> from the waves you surfed.</h1>
           <p className="mt-4 max-w-[480px] text-[13px] leading-relaxed text-muted md:text-[14px]">Browse photos and videos captured from the beach. Find your session, save your waves, and download them in HD.</p>

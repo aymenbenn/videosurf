@@ -16,11 +16,11 @@ const shots = [
 ];
 
 export const illustrations = {
-  homeBand: '/illustrations/coastal-line-art.svg',
-  homePanorama: '/illustrations/coastal-line-art.svg',
-  spotHeader: '/illustrations/coastal-line-art.svg',
-  studioBand: '/illustrations/coastal-line-art.svg',
-  spotThumb: '/illustrations/coastal-line-art.svg'
+  homeBand: '/imgi_3_home-scene-e2dcfe3e.png',
+  homePanorama: '/ChatGPT Image 14 sept. 2026, 23_44_14.png',
+  spotHeader: '/ChatGPT Image 14 sept. 2026, 23_40_16.png',
+  studioBand: '/ChatGPT Image 14 sept. 2026, 23_44_14.png',
+  spotThumb: '/ChatGPT Image 14 sept. 2026, 23_40_16.png'
 };
 
 export const spotThumbs: Record<string, string> = {
