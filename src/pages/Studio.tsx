@@ -16,7 +16,7 @@ export function Studio({ isApp }: Props) {
       {/* Photographer hero: photography first, illustration only as a subtle brand accent. */}
       <section className="relative mx-auto max-w-[1280px] overflow-hidden border-x border-b border-line bg-white md:mx-4 lg:mx-auto lg:rounded-b-[2px]">
         <div className="absolute inset-0">
-          <img src="/imgi_43_keramas.jpeg" alt="Surf session" className="h-full w-full object-cover" />
+          <img src="/video img/imgi_43_keramas.jpeg" alt="Surf session" className="h-full w-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-[#faf6f0] via-[#faf6f0]/90 via-[48%] to-[#faf6f0]/15" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#1d2933]/10 to-transparent" />
         </div>

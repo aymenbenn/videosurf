@@ -11,8 +11,8 @@ export type Capture = {
 };
 
 const shots = [
-  '/imgi_46_playgrounds.jpeg', '/imgi_43_keramas.jpeg', '/imgi_41_sanur-reef.jpeg',
-  '/imgi_37_green-bowl.jpeg', '/imgi_45_lacerations.jpeg', '/imgi_44_shipwrecks.jpeg'
+  '/video img/imgi_46_playgrounds.jpeg', '/video img/imgi_43_keramas.jpeg', '/video img/imgi_41_sanur-reef.jpeg',
+  '/video img/imgi_37_green-bowl.jpeg', '/video img/imgi_45_lacerations.jpeg', '/video img/imgi_44_shipwrecks.jpeg'
 ];
 
 export const illustrations = {
